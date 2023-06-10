@@ -1,0 +1,17 @@
+main .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 80vh;
+
+    background-color: rgb(53, 54, 56);
+}
+
+main .experience #text_sobre {
+    word-wrap: normal;
+    max-width: 35vw;
+    font-size: 3vh;
+
+    color: azure;
+}
