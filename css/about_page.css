@@ -71,7 +71,7 @@ main .experience h2 {
     }
 }
 
-@media screen and (max-width: 850px) {   /* Deixar o texto na vertical, separando da imagem */
+@media screen and (max-width: 850px) {   /* Deixar as divs central e de experiências na vertical*/
     header {        
         padding: 6vw;
     }
@@ -103,7 +103,7 @@ main .experience h2 {
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 850px) {    /* Deixar a imagem principal mais uniforme em telas pequenas */
     main .central #img_pessoal {
         display: flex;
         justify-content: center;

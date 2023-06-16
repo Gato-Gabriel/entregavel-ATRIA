@@ -55,7 +55,7 @@ main .contatos .container .contact_box a, main .contatos .container .contact_box
     color: black;
 }
 
-@media screen and (max-width: 620px) {   /* Deixar o texto na vertical, separando da imagem */
+@media screen and (max-width: 620px) {   /* Aumentar o texto dos links */
     main .central .text_sobre h2{
         font-size: 6vw;
     }
@@ -64,7 +64,7 @@ main .contatos .container .contact_box a, main .contatos .container .contact_box
     }
 }
 
-@media screen and (max-width: 2560px){
+@media screen and (max-width: 2560px){  /* Aumentar a proporção em telas muito grandes */
     main #img_pessoal img {
         max-width: 60%;
     }
