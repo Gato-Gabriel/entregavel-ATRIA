@@ -1,0 +1,210 @@
+main .central {
+    display: flex;
+    align-items: center;
+
+    min-height: 60vh;
+
+    background-image: linear-gradient(.42turn, rgb(39, 41, 42), 40%, rgb(83, 85, 88));
+}
+main .central .text_sobre {
+    word-wrap: normal;
+    max-width: 35vw;
+    font-size: 3vh;
+
+    color: azure;
+}
+main .central #img_pessoal {
+    display: flex;
+    justify-content: center;
+}
+main #img_pessoal img {
+    max-width: 50%;
+}
+main .tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 6vh;
+}
+main .tecnologias h2 {
+    font-size: 3vw;
+    color: rgb(188, 197, 215);
+}
+main .tecnologias .container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+main .tecnologias .container .lang_box:nth-child(odd){
+    background-color: rgb(131, 141, 138);
+}
+main .tecnologias .container .lang_box {
+    display: flex;
+    justify-content: center;
+
+    border: 0.3vh solid black;
+    padding: 2%;
+    margin: 0 2vw;
+    border-radius: 12%;
+}
+main .tecnologias .container .lang_box img{
+    max-width: 22vw;
+    max-height: 22vh;
+}
+main .links_pags {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    min-height: 60vh;
+
+    background-color: rgb(53, 54, 56);
+}
+main .links_pags #img_pessoal {
+    display: flex;
+    justify-content: center;
+    max-width: 30%;
+}
+main .links_pags #img_pessoal img {
+    max-width: 90%;
+}
+main .links_pags .text_sobre {
+    display: flex;
+    flex-direction: column;
+    word-wrap: normal;
+    max-width: 26%;
+    font-size: 3vh;
+    align-items: center;
+
+    color: azure;
+}
+main .links_pags a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vh;
+    justify-self: center;
+
+    color: azure;
+    background-color: crimson;
+    background: linear-gradient(to right, crimson 50%, rgb(228, 79, 109) 50%) left;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+
+    padding: 15px;
+    border-radius: 25px;
+}
+main .links_pags a:hover {
+    color: azure;
+    background-position: right;
+    transition:all 0.5s ease;
+}
+
+@media screen and (max-width: 420px) {    /* Sumir com o ícone em telas pequenas */
+    header .row i { display: none; }
+    header .row a {
+        padding: 0 5px;
+    }
+    main .tecnologias .container .lang_box {
+        padding: 2%;
+        margin: 0 3vw;
+    }
+    main .tecnologias .container {
+        display:grid;
+        grid-row: auto auto;
+        grid-template-columns: 160px 160px;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 488px) {    /* Sumir com o ícone em telas pequenas */
+    main .tecnologias .container .lang_box {
+        padding: 2%;
+        margin: 0 6vw;
+    }
+}
+
+@media screen and (max-width: 560px) {   /* Deixar o texto na vertical, separando da imagem */
+    main .links_pags {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        padding: 5%;
+    }
+    main .links_pags .text_sobre {
+        max-width: 85%;    
+    }
+    main .links_pags .text_sobre p {
+        text-justify: distribute;
+    }
+    main .links_pags img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {   /* Deixar o texto na vertical, separando da imagem */
+    main .central {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    main .central .text_sobre {
+        max-width: 85vw;    
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        padding: 6vw;
+    }
+}
+
+@media screen and (max-width: 768px) {    /* Sumir com o ícone em telas pequenas */
+    main .tecnologias h2 {
+        font-size: 6vw;
+    }
+    main .links_pags {
+        flex-direction: column;
+    
+        min-height: 60vh;
+
+        padding: 2vh 0;
+    }
+    main .links_pags > * {
+        margin: 3vh 0;
+    }
+    main .links_pags .text_sobre {
+        min-width: 50vw;
+    }
+    main .links_pags #img_pessoal img {
+        max-width: 110%;
+    }
+}
+
+@media screen and (max-width: 825px) {    /* Sumir com o ícone em telas pequenas */
+    main .central {
+        min-height: 80vh;
+        padding: 2vh 0;
+    }
+}
+
+@media screen and (max-width: 920px) and (min-width:420px){
+    main .tecnologias .container {
+        display:grid;
+        grid-template-columns: 200px 200px;
+        grid-row: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    main #img_pessoal img {
+        max-width: 70%;
+    }
+}

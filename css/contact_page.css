@@ -2,8 +2,73 @@ main .central {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    height: 60vh;
+    padding-bottom: 3vh;
 
     background-color: rgb(53, 54, 56);
+}
+main .central .text_sobre h2{
+    font-size: 3.4vw;
+    background: -webkit-linear-gradient(#eee, #575252);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main .central #img_pessoal {
+    display: flex;
+    justify-content: center;
+}
+main #img_pessoal img {
+    max-width: 45%;
+}
+main .contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8vh 0;
+}
+main .contatos .container {
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    align-items: left;
+
+    min-width: 40vw;
+    font-size: 1.8vw;
+    padding-left: 10%;
+}
+main .contatos .container .contact_box {
+    padding: 2%;
+    max-width: 71%;
+}
+main .contatos .container .contact_box a:hover{
+    color: rgb(84, 84, 229)
+}
+main .contatos .container .contact_box:hover {
+    transition: 0.3s;
+    background-color: rgb(193, 215, 208);
+}
+main .contatos .container .contact_box a, main .contatos .container .contact_box a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (max-width: 620px) {   /* Deixar o texto na vertical, separando da imagem */
+    main .central .text_sobre h2{
+        font-size: 6vw;
+    }
+    main .contatos .container {
+        font-size: 6.1vw !important;
+    }
+}
+
+@media screen and (max-width: 2560px){
+    main #img_pessoal img {
+        max-width: 60%;
+    }
+    main .contatos .container {
+        font-size: 2.8vw;
+    }
 }
